@@ -13,7 +13,15 @@ jobs:
         steps:
             - name: Build
               run: echo "Construyendo app"
+
+    test:
+        runs-on: ubuntu-latest 
+        steps: 
             - name: Test
-              run: echo "Ejecutando tests"
-            - name: Deploy
-              run: echo "Desplegando app"
+              run: echo "Ejecutando pruebas" 
+
+    deploy: 
+        runs-on: ubuntu-latest 
+        steps: 
+            - name: Deploy 
+              run: echo "Desplegando aplicación"
