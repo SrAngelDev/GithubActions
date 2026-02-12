@@ -1,0 +1,19 @@
+name: Prueba CI
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Build
+              run: echo "Construyendo app"
+            - name: Test
+              run: echo "Ejecutando tests"
+            - name: Deploy
+              run: echo "Desplegando app"
